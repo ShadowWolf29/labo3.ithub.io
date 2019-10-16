@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');/*Roboto*/
+@font-face {
+    font-family: "Mad";
+    src: url("fonts/Mad_Hacker.otf") format("truetype");
+}
+*, ::before, ::after {
+    margin: 0;/*valor 0 al margin*/
+    padding: 0;/*valor 0 al padding*/
+    box-sizing: border-box;/*calculo de cajas*/
+}
+body
+{
+    margin-top: 2%;
+    background-color: #160f30;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;/*centrar verticalmente*/
+}
+header h1
+{
+    color: #eae7af ;
+    font-family: "Mad";
+    font-size: 1em;
+    float: right;
+}
+header img{
+    height:auto;
+    width: 100px;
+    float: left;
+    margin-right: 1em;
+}
+
+#articulo
+{
+    padding-top: 2%;
+    border-radius: 5%;
+    display: flex;
+    width: auto;
+    height: 550px;
+    background-image: url("img/fondo.png");
+    flex-direction: column;
+}
+#articulo
+{
+    width: 100%;
+    height: 500px;
+    padding-left: 1%;
+    padding-right:1%;
+}
+#articulo .button-container
+{
+    height: 15%;
+}
+#articulo .button-container button
+{
+    width: 20%;
+    height: auto;
+    float: left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: "Mad";
+    font-size: 1.5em;
+    background-color: #eee;
+}
+#articulo .button-container button:hover
+{
+    background-color: rgb(83, 1, 131);
+    transition: 0.5s;
+}
+#articulo .tab-panel
+{
+    margin-bottom:2%;
+    height: 85%;
+    background-color: gray;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    display: none;
+    border-bottom-left-radius:2%;
+    border-bottom-right-radius:2%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+
+.imagenes img
+{
+    float: left;
+    width: 30%;
+}
+.historia
+{
+    padding-right: 5%;
+    padding-left: 5%;
+    float: right;
+    width: 70%;
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+
+header h1
+{
+    color: #eae7af ;
+    font-family: "Mad";
+    font-size: 3em;
+    float: right;
+}
+}
